@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            list-style: none;
+            margin-top: 10px;
+        }
+        /* ul li:nth-child(1) {
+            background-color: pink;
+        } */
+        /* ul li:nth-child(2n) {
+            background-color: orange;
+        } */
+        /* ul li:nth-child(-n+5) {
+            background-color: blueviolet;
+        } */
+        /* ul li:nth-child(1) {
+            background-color: orange;
+        } */
+        ul li:nth-of-type(1) {
+            background-color: orange;
+        }
+        ul li:nth-of-type(10) {
+            background-color: pink;
+        }
+        ul li:nth-of-type(2n) {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <span>span</span>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <span>span</span>
+    </ul>
+</body>
+</html>

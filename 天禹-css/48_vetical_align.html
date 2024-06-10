@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 40px;
+            background-color: blueviolet;
+            height: 100px;
+            margin-top: 20px;
+        }
+        span {
+            font-size: 16px;
+            /* vertical-align: top; */
+            /* vertical-align: baseline; */
+            vertical-align: bottom;
+        }
+        .demo {
+            vertical-align: bottom;
+        }
+        table {
+            margin-top: 20px;
+            width: 600px;
+            height: 500px;
+            background-color: blueviolet;
+        }
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div>我是一段文字x<span>x</span></div>
+    <div class="demo">我不能直接使用vertical-align</div>
+    <table border="0">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>

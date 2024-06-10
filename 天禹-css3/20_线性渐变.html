@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>线性渐变</title>
+    <style>
+        .box::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+        .box div {
+            margin-left: 20px;
+            float: left;
+            border: 1px solid gray;
+            width: 15%;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        .box1 {
+            background: linear-gradient(red, yellow, green);
+        }
+        .box2 {
+            background: linear-gradient(to right,red, yellow, green);
+        }
+        .box3 {
+            background: linear-gradient(30deg, red, yellow, green);
+        }
+        .box4 {
+            background: linear-gradient(to right top, red, yellow, green);
+        }
+        .box5 {
+            background: linear-gradient(red 50px, yellow 150px, green 50px);
+            font-size: 30px;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">你好CSS</div>
+    </div>
+</body>
+</html>

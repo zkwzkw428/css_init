@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            border: 1px solid gray;
+            width: 900px;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            animation-name: move2;
+            animation-duration: 2s;
+            background-color: skyblue;
+        }
+        /* 定义动画 --第一种方式*/
+        /* @keyframes move {
+            from{
+
+            }
+            to {
+                background-color: orange;
+                border-radius: 50px;
+                transform: translate(800px);
+            }
+            
+        } */
+        /* 定义动画 --第二种方式 */
+        @keyframes move2 {
+            0% {
+                
+            }
+            50% {
+                background-color: red;
+            }
+            100% {
+                transform: translate(800px);
+                opacity: 0.5;
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">动画演示</div>
+    </div>
+</body>
+</html>

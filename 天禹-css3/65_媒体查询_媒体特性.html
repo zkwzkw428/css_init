@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            color: white;
+            font-size: 50px;
+        }
+        /* 如果视口宽度为900px就应用该样式 */
+        @media (width:900px) {
+            div {
+                background-color: purple;
+            }
+        }
+        /* 如果视口的宽度小于等于700px应用该样式 */
+        @media (max-width:700px) {
+            div {
+                background-color: orange;
+            }
+        }
+        /* 如果视口的宽度大于等于900px应用该样式 */
+        @media (min-width:900px) {
+            div {
+                color: green;
+                font-size: 20px;
+            }
+        }
+        /* 如果视口的高度小于等于600px */
+        @media (max-height:600px) {
+            div {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>媒体查询</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            margin: 100px auto;
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+        }
+        .inner {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            /* 改变原点 --关键词 */
+            transform-origin: right bottom;
+            /* 改变原点--具体像素值 */
+            transform-origin: 50px 50px;
+            /* 改变原点--百分比 */
+            transform-origin: 25% 25%;
+            /* 改变原点--给一个值 */
+            transform-origin: left;
+            transform: rotate(50deg) scale(1.5);
+            /* 变换原点对位移没影响，对旋转和缩放有影响 */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

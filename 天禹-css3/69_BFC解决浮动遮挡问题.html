@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+        .test {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* float: left; */
+            /* position: absolute; */
+            /* position: fixed; */
+            /* display: inline-block; */
+            /* overflow: hidden; */
+            /* column-count: 1; */
+            display: flow-root;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer"></div>
+    <div class="test"></div>
+</body>
+</html>

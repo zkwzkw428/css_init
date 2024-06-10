@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:empty {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        div p:nth-last-child(1) {
+            background-color: orange;
+        }
+        div p:nth-last-of-type(1) {
+            background-color: purple;
+        }
+        :root {
+            background-color: gray;
+        }
+        div span:only-child {
+            background-color: skyblue;
+        }
+        div span:only-of-type {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div><span>span</span></div>
+    <div><span>span</span><p><span>span</span></p></div>
+    <div>
+        <span>span</span>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>7</p>
+        <p>8</p>
+        <span>span</span>
+    </div>
+</body>
+</html>

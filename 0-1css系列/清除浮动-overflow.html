@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            overflow: hidden; /*清除浮动关键*/
+            width: 300px;
+            border: 1px solid black;
+        }
+        #first, #second {
+            width: 100px;
+            height: 50px;
+            border: 1px solid red;
+        }
+        #first {
+            float: left;
+        }
+        #second {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">
+        <div id="first">1</div>
+        <div id="second">2</div>
+    </div>
+</body>
+</html>

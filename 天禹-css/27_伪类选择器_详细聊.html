@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择器的权重计算 (a, b, c) */
+        /* a:id选择器的个数 */
+        /* b:类，伪类，属性选择器的个数 */
+        /* c:元素，伪元素的个数 */
+        #test p span{
+            color: purple;
+        }
+        .container {
+            color: red;
+        }
+        div p span.header {
+            color: orange;
+        }
+        div>p>span.center {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="test">
+        <p>
+            <span class="header" style="color: chartreuse;">尚硅谷，让天下没有难学的技术！</span>
+            <span class="center">我是张三，我爱敲代码</span>
+        </p>
+    </div>
+</body>
+</html>

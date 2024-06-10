@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            border: 2px solid gray;
+            transform-style: preserve-3d;
+            perspective: 500px;
+        }
+        .inner {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            /* 由于元素没有厚度一说，缩放z轴其实就是改变景深，缩放4倍，元素景深离我们近4倍，导致元素显示变大 */
+            /* transform: scaleZ(4); */
+            transform: scale3d(1.5, 2, 1.2) rotateY(40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

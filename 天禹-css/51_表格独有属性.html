@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 2px solid blueviolet;
+            width: 500px;
+            /* 控制列宽 */
+            table-layout: fixed;
+            /* 控制单元格的间距，前提是单元的边框不能合并 */
+            border-spacing: 10px;
+            /* 合并相邻的单元格边框 */
+            /* border-collapse: collapse; */
+            /* 隐藏没有内容的边框 */
+            empty-cells: hide;
+            /* 设置表格标题出现的位置 */
+            caption-side: top;
+        }
+        td, th {
+            border: 2px solid skyblue;
+        }
+        .number {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>人员信息</caption>
+        <tr>
+            <td class="number">序号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+            <td>政治面貌</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张三</td>
+            <td>18</td>
+            <td>男</td>
+            <td>党员</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>李四</td>
+            <td>19</td>
+            <td>女</td>
+            <td>团员</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>王五</td>
+            <td>20</td>
+            <td>男</td>
+            <td>群众</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>赵六</td>
+            <td>21</td>
+            <td>女</td>
+            <td>党员</td>
+        </tr>
+    </table>
+</body>
+</html>

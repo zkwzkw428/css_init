@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 40px;
+        }
+        .box1 {
+            background-color: orange;
+        }
+        .box2 {
+            background-color: purple;
+            float: left;
+        }
+        .box3 {
+            background-color: blueviolet;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.元素脱离文档流
+        2.元素可以设置宽高，且有效
+        3.元素的padding和margin都可以完美设置
+        4.元素的高度和内容都尽可能小
+        5.元素浮动之后不会像行内块那样被当作文本处理，没有行内块的空白问题
+        6.没有margin合并和塌陷的问题
+     -->
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+</body>
+</html>

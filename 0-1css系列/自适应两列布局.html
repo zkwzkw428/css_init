@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main, #sidebar {
+            float: left;
+            color: white;
+        }
+        #main {
+            width: 100%;
+            margin-right: -200px;
+            background-color: hotpink;
+        }
+        #sidebar {
+            width: 200px;
+            background-color: lightblue;
+        }
+        /* 防止浏览器可视区域宽度不足时发生文本重叠 */
+        #main p {
+            margin-right: 210px;
+            /* 200px + 10px, 10px是它们的间距 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <p>这是主体部分, 自适应宽度</p>
+    </div>
+    <div id="sidebar"><p>这是侧边栏部分, 固定宽度</p></div>
+</body>
+
+</html>

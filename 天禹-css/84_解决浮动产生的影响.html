@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 480px;
+            border: 1px solid red;
+            /* 方案1：给父元素手动添加高度 */
+            /* height: 120px; */
+
+            /* 方案2: 给父元素添加overflow属性 */
+            /* overflow: hidden; */
+
+            /* 方案三: 给父元素也添加浮动*/
+            /* float: left; */
+
+            /* 方案4:给父元素的最后一个块不浮动，且清除浮动效果 */
+
+            /* 方案5:给父元素的伪元素设置样式，且清除浮动，最优解 */
+        }
+        .outer::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .box {
+            margin: 10px;
+            float: left;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+        }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+        }
+        /* .box5 {
+            clear: both;
+            float: none;
+        } */
+        .test {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 注意:浮动元素只对后面的元素会产生影响，不会影响前面的布局 -->
+    <div class="outer">
+        <div class=" box box1">1</div>
+        <div class=" box box2">2</div>
+        <div class=" box box3">3</div>
+        <div class=" box box4">4</div>
+        <!-- <div class=" box box5">5</div> -->
+    </div>
+    <div class="test">test</div>
+</body>
+</html>

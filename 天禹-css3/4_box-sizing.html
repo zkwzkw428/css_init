@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            background-color: orange;
+            border: 5px solid red;
+        }
+        .box2 {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid blueviolet;
+            background-color: skyblue;
+            /* 设置为怪异盒模型，宽度高度包括内边距和外边距，内容区浏览器自动计算 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+</body>
+</html>

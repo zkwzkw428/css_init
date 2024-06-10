@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+      }
+      .one {
+        background-color: purple;
+        margin-bottom: 50px;
+        /* 此处与two发送边框合并，由于两者的下边距与上边距一致，所有合并为50 */
+      }
+      .two {
+        background-color: red;
+        margin-top: 50px;
+        /* 此时也发送合并，距离取最大值也就是70px */
+        margin-top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器选择内部的某一元素, 包括子元素和其他后代元素 */
+        #first p {
+            color: red;
+        }
+        /* 子代选择器, 选择的是内部的某一个子元素(亲子代), 不包括其他元素内部的*/
+        #first>p {
+            color: red;
+        }
+        /* 兄弟选择器, 用于选中元素后面不包括前面的某一类兄弟元素 */
+        #second~p {
+            color: red;
+        }
+        /* 相邻选择器, 用于选择元素后面(不包括前面)的某一个"相邻"的兄弟元素 */
+        #second+p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        <p>lvye的子元素</p>
+        <p>lvye的子元素</p>
+        <div id="second">
+            <p>lvye子元素的子元素</p>
+            <p>lvye子元素的子元素</p>
+        </div>
+        <p>lvye的子元素</p>
+        <p>lvye的子元素</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        strong {
+            font-size: 40px;
+            border: 1px solid red;
+            /* 让其周围元素与其中线对齐 */
+            vertical-align: middle;
+        }
+        img {
+            width: 80px;
+            vertical-align: middle;
+        }
+        span {
+            font-size: 12px;
+        }
+        div {
+            /* 将div转换为inline-block,inline, table-cell*/
+            vertical-align: middle;
+            display: table-cell;
+            width: 120px;
+            height: 120px;
+            border: 1px solid gray;
+        }
+        div img {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <span>绿叶学习网</span><strong>绿叶学习网</strong><span>绿叶学习网</span><br/>
+    <span>绿叶学习网</span><img src="./images/wallhaven-rrorj7.jpg" alt=""><span>绿叶学习网</span>
+    <!-- vetical-align属性对block无效 -->
+    <div><img src="./images/wallhaven-j33jj5.jpg" alt=""></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            list-style: none;
+            margin-top: 20px;
+            height: 50px;
+        }
+        ul li:not(.fail) {
+            background-color: purple;
+        }
+        ul li:not([title='excellent']) {
+            background-color: red;
+        }
+        /* not(选择器) 排除选择器当中的元素，选择其他元素*/
+    </style>
+</head>
+<body>
+    <h2>数学成绩表</h2>
+    <ul>
+        <li title="excellent">张三:90分</li>
+        <li>李四:87分</li>
+        <li>王五:84分</li>
+        <li>孙七:78分</li>
+        <li>老八:70分</li>
+        <li>杨九:60分</li>
+        <li class="fail">魏十:54分</li>
+    </ul>
+</body>
+</html>

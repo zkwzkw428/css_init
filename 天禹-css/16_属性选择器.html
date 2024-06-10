@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 只要具有title属性就选择 */
+        /* [title] {
+            color: red;
+        } */
+
+        /* 具有title属性且值得完全匹配 */
+        /* [title='guigu'] {
+            color: orange;
+        } */
+
+        /* 具有title属性且值以某字符开头 */
+        /* [title ^= 'g'] {
+            color: red;
+        } */
+
+        /* 具有title属性，且值以某字符结尾 */
+        /* [title$= 'u'] {
+            color: pink;
+        } */
+
+        /* 具有title属性，且值只要包含该字符 */
+        [title*='x'] {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li title="guigu">尚硅谷</li>
+        <li title="guigu">尚硅谷</li>
+        <li title="school">尚硅谷</li>
+        <li title="xuexiao">尚硅谷</li>
+    </ul>
+</body>
+</html>

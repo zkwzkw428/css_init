@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 900px;
+            height: 900px;
+            background-color: orange;
+            display: flex;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            border: 1px solid gray;
+            /* 主轴剩余空间的分配方式, 分配算法是:flex-glow的个数作为分母，主轴那一行剩余的空间作为分子*/
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

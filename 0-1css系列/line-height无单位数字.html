@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            /* 父元素行高:30px x 1.5 = 45px */
+            line-height: 1.5;
+            background-color: hotpink;
+        }
+        #son {
+            /* 子元素行高度: 20px x 1.5 = 30px(继承父元素的系数) */
+            font-size: 20px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">这是父元素
+        <div id="son">这是子元素</div>
+    </div>
+</body>
+</html>

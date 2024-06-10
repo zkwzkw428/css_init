@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            background-color: blueviolet;
+        }
+        .insider1 {
+            width: 300px;
+            height: 200px;
+            background-color: orange;
+            /* 给父元素的第一个元素设置上边距，会直接作用于父元素 */
+            margin-top: 100px;
+        }
+        .insider2 {
+            width: 300px;
+            height: 200px;
+            background-color: purple;
+            /* 给父元素的最后一个元素设置下边距，会直接作用于父元素 */
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- margin塌陷问题解决办法
+        1.给父元素加border
+        2.给父元素加padding
+        3.overflow：hidden(完美解决)
+     -->
+    <div class="outer">
+        <div class="insider1"></div>
+        <div class="insider2"></div>
+    </div>
+    <div>1</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 20px;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box2 {
+            /* 视口宽度的20% */
+            width: 20vw;
+            /* 视口高度的20% */
+            height: 20vh;
+            background-color: purple;
+        }
+        .box3 {
+            /* 视口的宽度和长度，哪个大，就采用哪个的20% */
+            width: 20vmax;
+            height: 20vmax;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

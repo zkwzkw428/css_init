@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            /* 父元素行高:30px x 150% = 45px */
+            font-size: 30px;
+            line-height: 150%;
+            height: 45px;
+            /* height: 100px; */
+            background-color: hotpink;
+        }
+        #son {
+            /* 子元素行高:20px x 120% = 24px */
+            font-size: 20px;
+            line-height: 120%;
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">父元素
+        <div id="son">子元素</div>
+    </div>
+</body>
+</html>

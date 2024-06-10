@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            transform-style: preserve-3d;
+            perspective: 500px;
+              /* 改变透视点 */
+            perspective-origin: 102px 102px;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+              /* 改变原点 */
+            transform-origin: 0px;
+            transform: rotateY(45deg);
+            /* 旋转建议放在最后 */
+            transform: translateZ(100px) scaleZ(2) rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

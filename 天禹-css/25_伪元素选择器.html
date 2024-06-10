@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 什么是伪元素, 不是元素, 但很像元素, 是元素当中某个特殊位置描述 */
+        div::first-letter {
+            color: red;
+            font-size: 20px;
+        }
+        /* 选择第一行 */
+        div::first-line {
+            color: orange;
+            font-size: 15px;
+        }
+        p::before {
+            content: '￥';
+        }
+        p::after {
+            content: '.00';
+        }
+        /* input提示内容文字 */
+        input::placeholder {
+            color: orange;
+        }
+        /* 选中的内容 */
+        div::selection {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, amet nisi modi doloribus at perspiciatis eligendi quasi quibusdam, maiores corporis totam nemo. Quas voluptatem provident sunt repellendus illum minus odio!</div>
+    <p>199</p>
+    <p>299</p>
+    <p>399</p>
+    <p>499</p>
+    <input type="text" placeholder="请选择输入内容">
+</body>
+</html>

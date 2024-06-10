@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        width: 500px;
+        height: 500px;
+        background-color: blueviolet;
+        position: relative;
+      }
+      .insider {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        position: absolute;
+        /* 下面两种方案，子元素都必须设置宽高，不然子元素会占据整个父元素 */
+        /* 方案1 */
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        
+        /* 方案2 */
+        left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="insider">特殊应用</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .leftfix {
+            float: left;
+        }
+        .rightfix {
+            float: right;
+        }
+        .clearfix::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .logo {
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+            background-color: #ccc;
+        }
+        .banner {
+            width: 540px;
+            height: 80px;
+            line-height: 80px;
+            background-color: #ccc;
+            margin: 0 10px;
+        }
+        .banner2 {
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+            background-color: #ccc;
+        }
+        .content {
+            margin-top: 10px;
+        }
+        .menu {
+            width: 960px;
+            height: 30px;
+            background-color: #ccc;
+            margin-top: 10px;
+        }
+        .item1 {
+            width: 368px;
+            height: 198px;
+            border: 1px solid black;
+        }
+        .item2 {
+            width: 368px;
+            height: 198px;
+            margin-left: 10px;
+            border: 1px solid black;
+        }
+        .bottom {
+            margin-top: 10px;
+        }
+        .item3 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+        }
+        .item4 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+            margin: 0 10px;
+        }
+        .item5 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+        }
+        .item6 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+            margin-left: 10px;
+        }
+        .right {
+            margin-left: 10px;
+        }
+        .item7 {
+            width: 198px;
+            height: 128px;
+            border: 1px solid black;
+        }
+        .item8 {
+            width: 198px;
+            height: 128px;
+            border: 1px solid black;
+            margin: 10px 0;
+        }
+        .item9 {
+            width: 198px;
+            height: 128px;
+            border: 1px solid black;
+        }
+        .footer {
+            height: 60px;
+            line-height: 60px;
+            background-color: #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 版心内容 -->
+    <div class="container">
+         <!-- 头部区域 -->
+         <div class="header clearfix">
+            <div class="logo leftfix">logo</div>
+            <div class="banner leftfix">banner</div>
+            <div class="banner2 leftfix">banner2</div>
+         </div>
+         <!-- 菜单区域 -->
+         <div class="menu">菜单</div>
+         <!-- 内容区域 -->
+         <div class="content clearfix">
+            <!-- 左侧区域 -->
+            <div class="left leftfix">
+                <!-- 头部区域 -->
+                <div class="top clearfix">
+                    <div class="item1 leftfix">栏目一</div>
+                    <div class="item2 leftfix">栏目二</div>
+                </div>
+                <!-- 底部区域 -->
+                <div class="bottom clearfix">
+                    <!-- item区域 -->
+                    <div class="item3 leftfix">栏目三</div>
+                    <div class="item4 leftfix">栏目四</div>
+                    <div class="item5 leftfix">栏目五</div>
+                    <div class="item6 leftfix">栏目六</div>
+                </div>
+            </div>
+            <!-- 右侧区域 -->
+            <div class="right rightfix">
+                <div class="item7">栏目七</div>
+                <div class="item8">栏目八</div>
+                <div class="item9">栏目九</div>
+            </div>
+         </div>
+         <!-- 底部区域 -->
+         <div class="footer">页脚</div>
+    </div>
+</body>
+</html>

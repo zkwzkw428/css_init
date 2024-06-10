@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 600px;
+            background-color: #888;
+            /* 开启flex布局 */
+            display: flex;
+        }
+        .inner1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            background-color: skyblue;
+        }
+        .inner2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            background-color: skyblue;
+        }
+        .inner3 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 开启flex布局的是容器，只要里面的子元素是项目-->
+    <!-- 只要变成flex的项目，无论什么元素都会块状化 -->
+    <!-- flex布局不影响文档流 -->
+    <div class="outer">
+        <div class="inner1">1</div>
+        <div class="inner2">2</div>
+        <div class="inner3">3</div>
+    </div>
+</body>
+</html>

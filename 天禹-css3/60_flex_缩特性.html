@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 900px;
+            height: 900px;
+            background-color: orange;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            /* 压缩有个前提，那就是伸缩盒子的宽度不够子元素展示，但是最终压缩也得然项目里面的类容完整显示*/
+            flex-shrink: 1;
+            /* 为了让宽度较小的项目，分担伸缩盒子宽度或者高度不够，还能让其正常显示的计算方法,也就是利用伸缩比，不是每个项目都缩小一样的px */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+    </div>
+</body>
+</html>

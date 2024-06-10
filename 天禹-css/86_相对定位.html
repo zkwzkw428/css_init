@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            /* height: 600px; */
+            background-color: blueviolet;
+            padding: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box2 {
+            margin: 20px 0;
+            position: relative;
+            left: 50px;
+            top: 150px;
+            background-color: purple;
+            /* 相对定位不脱离文档流，是按照之前的位置来进行移动的 */
+            /* 开启定位之后层级就比没开的元素层级高，也就是开定位的压在没开定位的身上 */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

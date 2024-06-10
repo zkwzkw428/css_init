@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {color: red;}
+        #outer {color: green;}
+        #outer  #innrer {color: blue;}
+        span {color: purple;}
+        strong{color: black;}
+        /* 当继承样式和指定样式发生冲突时, 指定样式获胜 */
+        /* 最后样式为black */
+    </style>
+</head>
+<body>
+    <div id="father">
+        <p class="inner">
+            <span><strong>绿叶学习网</strong></span>
+        </p>
+    </div>
+</body>
+</html>

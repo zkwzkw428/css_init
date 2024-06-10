@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 0 auto;
+            margin-top: 60px;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        img {
+            width: 400px;
+            transition: all 1s linear;
+        }
+        .mask {
+            width:400px;
+            height: 400px;
+            font-size: 100px;
+            line-height: 400px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            position: absolute;
+            opacity: 0.5;
+            top:0;
+            left: 0;
+            display: none;
+            transition: all 1s linear;
+        }
+        .box:hover .mask {
+            display: block;
+        }
+        .box:hover img {
+            transform: scale(1.4) rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/pic_-bMIkST6b_35S1fHyvBnn.png" alt="">
+        <div class="mask">GRIL</div>
+    </div>
+</body>
+</html>

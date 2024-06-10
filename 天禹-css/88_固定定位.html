@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            height: 500px;
+            background-color: blueviolet;
+            padding: 20px;
+        }
+        .box {
+            margin-top: 20px;
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+        }
+        .box2 {
+            /* 开启固定定位 */
+            position: fixed;
+            margin-top: 0;
+            /* top:0; */
+            /* left: 0; */
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 固定定位默认以视口左上角的位置进行移动 -->
+    <!-- 
+        1.固定定位脱离文档流
+        2.固定定位和浮动一起设置，浮动无效
+        3.固定定位也可以给margin但是不推荐
+        4.固定定位一般与相对定位一起搭配
+        5.无论什么元素设置了固定定位，都变成了定位元素，宽度高度由内容撑开，而且可以设置宽高
+     -->
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">点击回到顶部</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>

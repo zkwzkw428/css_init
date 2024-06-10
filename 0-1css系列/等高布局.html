@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 关键: 定义父元素具备tr特点 */
+        #wrpper {
+            display: table-row;
+        }
+        #img-box {
+            display: table-cell; 
+            vertical-align: middle;                   /*垂直居中*/
+            text-align: center;                       /*水平居中*/
+            width: 150px;           
+            border: 1px solid red;
+        }
+        #text-box {
+            display: table-cell;
+            width: 200px;
+            border: 1px solid red;
+            border-left: none;
+            padding: 10px;
+        }
+        /* 高度由内容撑开，高度由两者高度最大值决定 */
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="img-box">
+            <img src="" alt="">
+        </div>
+        <div id="text-box">
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>

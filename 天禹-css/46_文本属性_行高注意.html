@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 注意点1: 行高过小，文字重叠，最小值是0，且不能为负数 */
+        /* #d1 {
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 0px;
+        } */
+        /* 注意点2: 行高可以继承*/
+        /* #d2 {
+            font-size: 40px;
+            background-color: orange;
+            line-height: 60px;
+        } */
+        span {
+            font-size: 200px;
+            /* line-height: 300px; */
+            /* 200x 1.5 */
+            line-height: 1.5; 
+            color: red;
+        }
+        /* 注意点3：line-height和height是什么关系 
+            设置了height，高度就是height的值
+            没有height，高度就是line-height*行数
+        */
+        /* #d3 {
+            font-size: 40px;
+            background-color: yellowgreen;
+            line-height: 300px;
+            height: 100px;
+        } */
+        /* #d4 {
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 0px;
+        } */
+        /* 行高应用场景1:多行文字的垂直间距设置 */
+        /* #d5 {
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 100px;
+        } */
+        /* 行高应用场景2:单行文字垂直居中 */
+        #d6 {
+            font-size: 40px;
+            height: 300px;
+            background-color: blueviolet;
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">这世上，大多数人生而平凡，一年四季，都在为了生计疲惫奔波，总会有感到疲惫的时候，也希望有个人能走近自己，给自己温暖和依靠。</div>
+    <div id="d2">这世上，大多数人生而平凡，一年四季，都在为了生计疲惫奔波，总会有感到疲惫的时候，也x<span>x希望</span>有个人能走近自己，给自己温暖和依靠。</div>
+    <div id="d3">这世上，大多数人生而平凡，一年四季，都在为了生计疲惫奔波，总会有感到疲惫的时候，也希望有个人能走近自己，给自己温暖和依靠。</div>
+    <div id="d4">这世上，大多数人生而平凡，一年四季，都在为了生计疲惫奔波，总会有感到疲惫的时候，也希望有个人能走近自己，给自己温暖和依靠。</div>
+    <div id="d5">这世上，大多数人生而平凡，一年四季，都在为了生计疲惫奔波，总会有感到疲惫的时候，也希望有个人能走近自己，给自己温暖和依靠。</div>
+    <div id="d6">这世上，大多数人生而平凡</div>
+</body>
+</body>
+</body>
+
+</html>

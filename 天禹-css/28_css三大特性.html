@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* css第一特性层叠性 */
+        div {
+            color: red;
+        }
+        div {
+            color: skyblue;
+        }
+        div span {
+            color: purple;
+        }
+        /* css第二特性继承性 */
+        /* 继承的样式优先级最低, 通配选择器都能将其改变 */
+
+        /* css第三特性优先级 */
+        /* ！important>行内>id选择器>类选择器>元素选择器>通配选择器>继承样式 */
+    </style>
+  </head>
+  <body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <p>
+            <span>我是p里面的span元素</span>
+        </p>
+    </div>
+  </body>
+</html>

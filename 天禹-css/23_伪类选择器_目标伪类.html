@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: lightblue;
+            display: inline-block;
+            padding: 20px;
+            background-color: orange;
+        }
+        div {
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        div+div {
+            margin-top: 30px;
+        }
+        /* 点击哪个块的锚点，哪个块就变色 */
+        div:target {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <a href="#one">点击去1</a>
+    <a href="#two">点击去2</a>
+    <a href="#three">点击去3</a>
+    <a href="#four">点击去4</a>
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="four">4</div>
+</body> id=""
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 400px;
+            height: 400px;
+            transform-style: preserve-3d;
+            perspective: 700px;
+            perspective-origin: 300px 200px;
+        }
+        .inner {
+            width: 400px;
+            height: 400px;
+            background: skyblue;
+            transform: translateZ(400px);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 水平能拉伸 */
+            /* resize: horizontal; */
+            /* 垂直拉伸 */
+            /* resize: vertical; */
+            resize: both;
+            /* 必写属性 */
+            overflow: hidden;
+        }
+        .son {
+            width: 800px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>resize
+        <div class="son">son</div>
+    </div>
+</body>
+</html>

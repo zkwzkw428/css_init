@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 800px;
+            height: 600px;
+            background-color: #888;
+            display: flex;
+            /* 侧轴对齐 */
+            /* 侧轴对齐--从侧轴开始位置对齐*/
+            /* align-items: flex-start; */
+            /* 侧轴对齐--从侧轴底部对齐 */
+            align-items: flex-end;
+            /* 侧轴对齐--center */
+            /* align-items: center; */
+            /* 侧轴对齐--基线对齐 */
+            /* align-items: baseline; */
+            /* 侧轴对齐--自动拉伸(项目不能设置高度)*/
+            align-items: stretch;
+        }
+        .inner1 {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid red;
+        }
+        .inner2 {
+            width: 100px;
+            height: 150px;
+            font-size: 30px;
+            background-color: skyblue;
+            border: 1px solid red;
+        }
+        .inner3 {
+            width: 100px;
+            height: 120px;
+            background-color: skyblue;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1">x</div>
+        <div class="inner2">x</div>
+        <div class="inner3">x</div>
+    </div>
+</body>
+</html>

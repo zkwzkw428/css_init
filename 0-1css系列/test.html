@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @font-face {
+            font-family: 'iconfont';
+            src: url("./fonts/iconfont.ttf") format("truetype");
+            /* src: url("./fonts/iconfont.eot"); */
+        /* src: url("./fonts/iconfont.woff") format("woff"); */
+        /* src: url("./fonts/iconfont.svg") format("svg"); */
+        /* src: url("./fonts/iconfont.eot?#iefix") format("embedded-opentype"); */
+        /* } */
+
+        @font-face {
+            font-family: 'iconfont';
+            src: url('./fonts/iconfont.ttf') format('truetype');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        span::before {
+            display: block;
+            content: "\e7df";
+        }
+
+        /* 自定义字体四步骤 */
+        /* 下载好字体文件 - 使用@font-face自定义字体 - 给元素添加iconfont - 在元素中添加对应的字符串 */
+    </style>
+</head>
+
+<body>
+    <span class="iconfont">&#xe78f;</span>
+
+</body>
+
+</html>

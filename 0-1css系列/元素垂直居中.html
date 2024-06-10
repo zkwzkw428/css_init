@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            position: relative;
+            width: 200px;
+            height: 160px;
+            border: 1px solid silver;
+        }
+
+        #son {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 本身的一半 */
+            margin-top: -30px;
+            margin-left: -50px;
+            width: 100px;
+            height: 60px;
+            background-color: hotpink;
+        }
+        /* 父元素 {
+            position: relative;
+        }
+        子元素 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: "height值一半的负值";
+            margin-left: "width值一半的负值";
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="father">
+        <div id="son"></div>
+    </div>
+</body>
+
+</html>

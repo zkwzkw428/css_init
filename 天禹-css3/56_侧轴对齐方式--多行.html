@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 808px;
+            height: 650px;
+            background-color: #888;
+            display: flex;
+            flex-wrap: wrap;
+            /* 侧轴对齐方式--多行 */
+            /* 项目对齐侧轴开始位置 */
+            align-content: flex-start;
+            /* 项目对齐侧轴结束位置 */
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+            align-content: space-evenly;
+        }
+        .inner1 {
+            width: 200px;
+            height: 240px;
+            background-color: skyblue;
+            border: 1px solid red;
+        }
+        .inner2 {
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            background-color: skyblue;
+            border: 1px solid red;
+        }
+        .inner3 {
+            width: 200px;
+            height: 250px;
+            background-color: skyblue;
+            border: 1px solid red;
+        }
+        .inner4 {
+            width: 200px;
+            height: 140px;
+            background-color: skyblue;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+        <div class="inner3"></div>
+        <div class="inner4"></div>
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+        <div class="inner3"></div>
+        <div class="inner4"></div>
+    </div>
+</body>
+</html>

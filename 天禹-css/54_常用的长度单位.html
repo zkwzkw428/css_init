@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 第一种长度单位:px（像素） */
+        .d1 {
+            width: 400px;
+            height: 400px;
+            margin-top: 10px;
+            background-color: blueviolet;
+            margin:20px auto;
+        }
+        /* 第二种长度单位em:(相对于当前元素的font-size*em) */
+        .d2 {
+            /* 没有设置font-size就往父元素找，直到找到根元素 */
+            font-size: 20px;
+            width: 20em;
+            height: 20em;
+            margin-top: 10px;
+            background-color: blueviolet;
+            margin:20px auto;
+        }
+        /* 第三种长度单位:rem(相对于跟元素的font-size*rem) */
+        /* 根元素的font-size默认为16px */
+        .d3 {
+            width: 20rem;
+            height: 20rem;
+            margin-top: 10px;
+            background-color: blueviolet;
+            margin:20px auto;
+        }
+        /* 第四种长度单位:百分比%:长度相对于当前元素的父元素*百分比 */
+        .d4 {
+            width: 400px;
+            height: 400px;
+            margin-top: 10px;
+            margin:20px auto;
+        }
+        .d4 .inside {
+            width: 50%;
+            height: 50%;
+            background-color: blueviolet;
+        }
+        .d5 {
+            width: 400px;
+            height: 400px;
+            margin-top: 10px;
+            background-color: blueviolet;
+            margin:20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">
+        <div class="inside">4</div>
+    </div>
+    <div class="d5">5</div>
+</body>
+</html>

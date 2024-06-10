@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 当元素的margin-top或者margin-left为负数时, "当前元素"会被拉回指定方向 */
+        /* 当元素的margin-bottom或者margin-right为负数时, "后续元素"会被拉回指定方向 */
+        #wrapper div {
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 21px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+
+        #first {
+            background-color: hotpink;
+        }
+
+        #second {
+            /* #second移动 */
+            margin-top: -30px;
+            /* #third移动 */
+            margin-bottom: -30px;
+            background-color: lightblue;
+        }
+
+        #third {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+    </div>
+</body>
+
+</html>

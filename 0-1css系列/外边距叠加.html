@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            background-color: lightskyblue;
+        }
+
+        #first {
+            margin-bottom: 20px;
+        }
+
+        #second {
+            margin-top: 30px;
+        }
+        /* 三个规则 */
+        /* 兄弟元素之间出现外边距叠加, 取较大者 */
+        /* 父子元素出现外边距跌叠加, 取较大者 */
+        /* 空元素上下出现外边距时, 也会进行合并 */
+    </style>
+</head>
+
+<body>
+    <div id="first">A</div>
+    <div id="second">B</div>
+</body>
+
+</html>
